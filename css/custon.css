@@ -1,0 +1,428 @@
+*{margin: 0;}
+
+html, body{ height: 100%;}
+body{  
+    font-family: "Fira Code";
+    font-size: .938rem;
+    color: #bdc0c2;
+}
+
+h1, h2, h3 {
+    font-family: "Press start 2P";
+    font-size: 2rem;
+}
+
+nav{
+    line-height: 3.25rem !important;
+}
+
+nav.nav-extended .nav-wrapper {
+    min-height: 5rem !important;
+    height: auto !important;
+}
+
+.bloco{
+    min-height:50%;
+}
+
+.text{
+    width: 100%;
+    float: left;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.grid{
+    display: grid;
+}
+
+.home{
+    background-image: url('../img/section.png');
+    background-repeat: no-repeat fixed;
+    background-size: cover;
+}
+
+.botoes a{font-size: 0.9rem; background-color: #F25A70; margin-bottom: 1rem; line-height: 3rem; box-shadow: 5px 5px 0px #000000;}
+
+
+.background-text {
+    background-color: #3A4042;
+    box-shadow: 5px 5px 0px #000000;
+    align-items: center;
+    text-align:center;
+}
+
+
+.background-text h1{
+    color: #F25A70;
+    text-shadow: 4px 4px 0px #000000;
+}
+
+.background-text h2{
+    color: #fff;
+    text-shadow: 4px 4px 0px #000000;
+}
+
+.navbar-fixed {
+    position: fixed;
+    height: 5rem;
+    z-index: 997;
+}
+
+.nav ul a:hover{
+    background-color: transparent; color: #F25A70;
+}
+
+#button-dw:hover{color: #7C5E99;}
+
+.logo__text{
+    font-size: 0;
+    margin: 0;
+}
+
+.logo_img{
+    margin-top: 0.35rem;
+    margin-left: 1.25rem;
+}
+
+.header{
+    width: 100%;
+    background-color: #7C5E99;
+    border-bottom: 4px solid #000;
+    transition: .2s;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 100;
+}
+
+.nav{
+    width : 100%;
+    height: 5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+
+}
+.nav__logo {
+    display: flex;
+    margin-left: 1.5rem;
+    width: 1.5rem;
+}
+ 
+.nav__toggle{
+    font-size: 1.2rem;
+    margin-right: 1.5rem;
+    cursor: pointer;
+    
+}
+
+@media screen and (max-width: 766px){
+    .nav__menu{
+        position: fixed;
+        background-color: #000!important;
+        top: -100%;
+        left: 0;
+        width: 100%;
+        padding: 4rem 0 3rem;
+        transition: 1s;
+    }
+}
+
+.nav__list{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap:1rem;
+}
+
+
+.nav__link{
+    text-transform: uppercase;
+    font-size: 1.25rem;
+}
+
+.nav__link:hover{
+    color: #F25A70;
+}
+
+.nav__close{
+    position: absolute;
+    font-size: 1.5rem;
+    top:1rem;
+    right: 1.5rem;
+    cursor: pointer;
+}
+
+.show-menu{
+    top: 0;
+}
+
+.scroll-header{
+    background-color: transparent;
+    border-bottom: none;
+}
+
+.active-link{
+    background: #db7080;
+    color: transparent;
+    -webkit-background-clip: text;
+    background-clip: text;
+}
+
+/*SECTION SKILLS*/
+
+.bloco__skills{
+    min-height: 60%;
+}
+
+.skills{
+    background-color: #F25A70;
+    align-items: center;
+    border-top: 1px solid #000;
+    border-bottom: 4px solid #7C5E99;
+
+}
+
+.skills__container{
+    font-family: 'Press start 2P';
+    color: #fff;
+    font-size: 1rem;
+    position: relative;
+    grid-template-columns: repeat(3, 1fr); 
+}
+
+.section__title{
+    text-align: center;
+    color: #fff;
+    font-size: 2rem;
+    margin-top: 3.125rem;
+    margin-bottom: 3.75rem;
+}
+
+
+.container__skills {
+    margin: 0 auto;
+    max-width: 1280px;
+    width: 65%;
+    margin-top: 4rem;
+}
+
+.skills__content{
+    row-gap: 1.5rem;
+    padding-bottom: 2rem;
+}
+
+.skills__img{
+    width: 15vw;
+    position: relative;
+    
+}
+
+.skills__container p{
+  margin-left: 1rem; 
+}
+
+progress{
+    border: solid #000 2px;
+    width: 150px;
+    height: 20px;
+    top: 4rem;
+    left: 12rem;
+    margin-top: 0.8rem;
+}
+  
+#progresss::-webkit-progress-value {
+    background: #7C5E99;
+    
+}
+#progresss::-webkit-progress-bar {
+    background: #eeeeee;
+    
+}
+/*SECTION SKILLS*/
+
+
+/*SECTION PROJETOS*/
+
+.projetos{
+    background: #000;
+    border-bottom: 4px solid #F25A70;
+}
+
+.projetos__container{
+    grid-template-columns: repeat(auto-fit, minmax(110px, 1fr));
+    row-gap: 5rem;
+    justify-items: center;
+    align-items: center;
+}
+.projetos__container img{width: 90px;}
+
+/*SECTION PROJETOS*/
+
+/*SECTION SOBRE*/
+
+.sobre{
+    background: #7C5E99;
+    padding-bottom: 2rem;
+    border-bottom:  4px solid #000;
+}
+
+.sobre p{
+    color: #fff;
+    text-align: justify;
+}
+
+/*SECTION SOBRE*/
+
+/*SECTION FORMULARIO*/
+.contato{
+    background: #474747;
+}
+
+.formulario{
+    display: inline-block;
+   
+}
+
+.formulario label{
+    color: #fff;
+    font-size: 1rem;
+}
+
+.formulario input, textarea{
+    border: 0.18rem solid #000;
+}
+
+.formulario label, input, textarea{
+    width:100%;
+}
+/*SECTION FORMULARIO*/
+
+/*SECTION ENVIAR*/
+
+.button{
+    display: flex;
+    width: 90%;
+    flex-direction: row;
+    justify-content: center;
+    background-color: #F25A70;
+    margin:auto;
+    padding: 1rem 1rem;
+    border-radius: .2rem;
+    transition: 1s;
+    box-shadow: 5px 5px 0px #000000;
+    cursor: pointer;
+}
+
+.button:hover{
+    background-color: #F25A70;
+}
+
+.button__icon{
+    font-size: 1.2rem;
+  }
+
+.button--flex{
+    color: #fff;
+    font-size: 1.2rem;
+    column-gap: .75rem;
+
+}
+
+.enviar{
+    font-family: 'Fira code';
+}
+.rodape__social{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    column-gap: 2.5rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    background-color: #000;
+}
+/*SECTION ENVIAR*/
+
+.scrollup{
+    width: 40px;
+    height: 40px;
+    position: fixed;
+    right: 1rem;
+    bottom: -20%;
+    display: flex;
+    background: linear-gradient(to bottom, #F25A70, #7C5E99); ;
+    border-radius: .25rem;
+    padding: .45rem;
+    opacity: 9;
+    z-index: 10;
+    border: 0.18rem solid #000;
+    transition: .5s
+    }
+    
+    .scrollup:hover {
+        background-color: #000;
+        opacity: 1;
+    }
+    
+    .show-scroll{
+        bottom: 5rem;
+    }
+
+@media only screen and (min-width: 319px) {
+    .background-text{width: 100%; margin-top: 30%; }
+    .background-text h1{font-size: 1.4rem; margin:0; padding-top: 1rem; padding-bottom:1rem;}
+    .background-text h2{font-size: 1rem; margin-top: 0.5rem; padding-bottom: 1.5rem;}
+    .botoes{ text-align: center; margin-top: 2rem;}
+
+}
+
+@media only screen and (min-width: 601px) {
+    .text{width: 55%;}
+    .background-text h1{font-size: 1.6rem;}
+    .background-text h2{font-size: 1.1rem;}
+    .botoes a{font-size: 1.3rem;}
+    /*SECTION SKILLS*/
+    .section__title{font-size: 2.5rem;}
+    .skills__container {font-size: 1.8rem;}
+    .skills__img{ left: 1rem; width: 10vw;}
+    progress{width: 250px; height: 30px;}
+    .skills__container p{font-size:1.5625rem; margin-left: 2.5rem;}
+    .projetos__container img{width: 168px}
+    .sobre p{font-size: 1.5rem;}
+    textarea{height: 10rem !important;}
+    .button{width: 85%}
+}
+
+@media screen and (min-width: 767px){
+    .bloco{min-height:100%;}
+    #button-dw{ display: block; margin-left: 0.625rem; margin-right: 1.5rem; background-color: #F25A70;  box-shadow: 5px 5px 0px #000000;} 
+    .nav__toggle, .nav__close{display: none;}
+    .background-text h1{font-size: 2.5rem; text-shadow: 4px 4px 0px #000000;  padding-top: 2.625rem; padding-bottom: 1.75rem;}
+    .background-text h2{font-size: 1.875rem; text-shadow: 4px 4px 0px #000000; padding-bottom: 2.75rem; margin: 0;}
+    .botoes{margin-top: 2.375rem;}
+    .botoes a{font-size: 1.25rem;}
+    .btn-download{margin-right: 3.5rem;}
+    .btn-contatos{ margin-left: 3.5rem;}
+    .nav__list{display: flex; flex-direction: row;}
+    .nav__link{ text-transform: initial;}
+}
+
+  @media only screen and (min-width: 993px) {
+    .text{width: 50%;}
+    .background-text{margin-top: 25%; }
+    .nav ul a{padding: 0 1.875rem;}
+    .container__skills{width: 40%;}
+    .skills__img{width: 7vw; left: -2rem;}
+    .skills__container p{font-size:1.5625rem; margin-left: 0rem;}
+    progress{width: 280px}
+    .button{width: 70%} 
+}
+
+@media only screen and (min-width: 1601px) {
+    .skills__img{width: 4vw; left: 4rem;}
+    .skills__container p{font-size:1.5625rem; margin-left: 4.5rem;}
+    .nome, .email, .mensagem{margin-bottom: 1rem;}
+    .button{width: 67.2%} 
+}
